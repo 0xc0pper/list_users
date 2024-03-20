@@ -17,11 +17,17 @@ catcher_URL = env_vars["CATCHERURL"]
 catcher_uses_TLS = env_vars["CATCHERTLS"].lower() == "true"
 
 
+client_ids = [
+        "4345a7b9-9a63-4910-a426-35363201d503", # alternate client_id taken from Optiv's Go365
+        "1b730954-1685-4b74-9bfd-dac224a7b894",
+        "0a7bdc5c-7b57-40be-9939-d4c5fc7cd417",
+        "1950a258-227b-4e31-a9cf-717495945fc2",
+        "00000002-0000-0000-c000-000000000000",
+        "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+        "30cad7ca-797c-4dba-81f6-8b01f6371013"
+    ]
 
-def generate_random_client_id():
-    return str(uuid.uuid4())
-
-client_id = generate_random_client_id()
+client_id = random.choice(client_ids)
 
 def send_login_request():
     url = "https://login.microsoft.com/common/oauth2/token"
