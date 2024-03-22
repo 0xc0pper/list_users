@@ -17,16 +17,35 @@ catcher_URL = env_vars["CATCHERURL"]
 catcher_uses_TLS = env_vars["CATCHERTLS"].lower() == "true"
 
 
-client_ids = [
-        "4345a7b9-9a63-4910-a426-35363201d503", # alternate client_id taken from Optiv's Go365
-        "1b730954-1685-4b74-9bfd-dac224a7b894",
-        "0a7bdc5c-7b57-40be-9939-d4c5fc7cd417",
-        "1950a258-227b-4e31-a9cf-717495945fc2",
-        "00000002-0000-0000-c000-000000000000",
-        "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
-        "30cad7ca-797c-4dba-81f6-8b01f6371013"
-    ]
+#client_ids = [
+#        "4345a7b9-9a63-4910-a426-35363201d503", # alternate client_id taken from Optiv's Go365
+#        "1b730954-1685-4b74-9bfd-dac224a7b894",
+#        "0a7bdc5c-7b57-40be-9939-d4c5fc7cd417",
+#        "1950a258-227b-4e31-a9cf-717495945fc2",
+#        "00000002-0000-0000-c000-000000000000",
+#        "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+#        "30cad7ca-797c-4dba-81f6-8b01f6371013"
+#    ]
 
+
+client_ids = [
+    "bc59ab01-8403-45c6-8796-ac3ef710b3e3",
+    "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+    "57fb890c-0dab-4253-a5e0-7188c88b2bb4",
+    "1b730954-1685-4b74-9bfd-dac224a7b894",
+    "00000002-0000-0000-c000-000000000000",
+    "872cd9fa-d31f-45e0-9eab-6e460a02d1f1",
+    "c7e126a0-c6a6-45c5-b7e2-d81b7fab7f42",
+    "e48d4214-364e-4731-b2b6-47dabf529218",
+    "9c5e57a3-93dd-4b4a-80d4-b7b35e3b2b0e",
+    "00000003-0000-0ff1-ce00-000000000000",
+    "f8a3e5d8-82a0-4b75-90cc-6b986f3d6b9c",
+    "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+    "a0c73c16-a7e3-4564-9a95-2bdf47383716",
+    "bc024368-1153-4739-b217-4326f2e966d0",
+    "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+    "00000009-0000-0000-c000-000000000000"
+]
 client_id = random.choice(client_ids)
 
 def send_login_request():
